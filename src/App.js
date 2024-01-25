@@ -6,12 +6,8 @@ import { Add } from "./myreact/add";
 import { About } from "./myreact/about";
 import { Login } from "./myreact/login";
 import React, { useState, useEffect } from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+
 function App() {
   let initlist;
 
@@ -65,7 +61,7 @@ function App() {
       <Router>
         <Header title="My Todos" />
         <Routes>
-          <Route exact path="/#" element={
+          <Route exact path="/" element={
               <>
                 <Add addlist={addlist} />
                 <Body todos={todos} ondelt={ondelt} />
