@@ -65,7 +65,7 @@ function App() {
       <Router>
         <Header title="My Todos" />
         <Routes>
-          <Route exact path="/" element={
+          <Route exact path="/#" element={
               <>
                 <Add addlist={addlist} />
                 <Body todos={todos} ondelt={ondelt} />
